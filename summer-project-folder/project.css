@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
+/* Header Section */
+
+.heading-image {
+    /* width: 50%; */
+    flex: 1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    /* border-radius: 150px; */
+}
+
+
+.header-section {
+    display: flex;
+    align-items: center;
+   
+
+}
+
+.text-content {
+    flex: 1;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.header-section h1 {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.promo-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.header-section p {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.discount {
+    color: #E628B2;
+    /* font-weight: bold; */
+    font-size: 2rem;
+}
+
+.content {
+    background-color: #FAF6E2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Header Section end */
+
+/* Card Styles */
+.card {
+    border: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    /* Space between cards */
+    background: white;
+    /* Card background */
+    border-radius: 10px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Prevent content overflow */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    /* object-fit: cover;  */
+    margin-top: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #ccc;
+}
+
+.furnitureware image{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #ccc;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-body p {
+    font-size: 1rem;
+}
+
+/* Button Styles */
+button {
+    background-color: #E626B2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+/* Coupon Section */
+.coupon-container {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 20px;
+   
+}
+
+.apply-coupon {
+    margin-bottom: 15px;
+    
+
+}
+
+#coupon-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coupon-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex: 1;
+    /* Take up remaining space */
+}
+
+#coupon-btn {
+    margin-bottom: 10px;
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-backdrop {
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+
+body.modal-open {
+    overflow: hidden; 
+}
+
+.modal-backdrop {
+    z-index: -1;
+  }
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .header-section h1 {
+        font-size: 2rem; /* Adjust header size for medium screens */
+    }
+
+    .header-section p {
+        font-size: 1.5rem; /* Adjust paragraph size */
+    }
+
+    .content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        max-width: 90%; /* Wider cards for tablets */
+    }
+
+    .header-section {
+        flex-direction: column; /* Stack header content vertically */
+    }
+
+    .heading-image img {
+        max-width: 100%; /* Responsive image */
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-section h1 {
+        font-size: 1.5rem; /* Smaller header for smaller screens */
+    }
+
+    .header-section p {
+        font-size: 1rem; /* Smaller paragraph for smaller screens */
+    }
+
+    .card {
+        width: 100%; /* Full width on smaller screens */
+        margin: 10px 0; /* Adjust margins for stacking */
+    }
+
+    .coupon-container {
+        padding: 10px; /* Less padding for smaller screens */
+    }
+
+    #coupon-code {
+        flex-direction: column; /* Stack coupon input and button */
+        align-items: stretch; /* Stretch items */
+    }
+
+    #coupon-input {
+        margin-bottom: 10px; /* Space between input and button */
+    }
+}
+
+@media (max-width: 576px) {
+    .header-section {
+        padding: 20px; /* Reduced padding on extra small screens */
+    }
+
+    .header-section p {
+        font-size: 0.9rem; /* Further decrease paragraph size */
+    }
+
+    .text-content {
+        padding: 20px; /* Adjust padding */
+    }
+    
+    .modal-body h1 {
+        font-size: 1.5rem; /* Smaller modal title */
+    }
+}
+/* Responsive Design end */
